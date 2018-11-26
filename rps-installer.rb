@@ -2,7 +2,7 @@ require 'open-uri'
 require 'sentry-raven'
 require 'config'
 
-Config.load_and_set_settings(Config.setting_files("config", "development"))
+Config.load_and_set_settings(Config.setting_files("config", "staging"))
 version = Settings.version
 installer = Settings.installer % { :version => version }
 uri = Settings.uri % { :installer => installer }
