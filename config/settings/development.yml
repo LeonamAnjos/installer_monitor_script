@@ -1,0 +1,4 @@
+installer: AppInstaller_%{version}.exe
+uri: https://path.to.server/%{installer}
+log_prefix: App_Installer_%{version}_
+dsn: https://pub.key:priv.key@sentry.io/???
